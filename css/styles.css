@@ -1,0 +1,9 @@
+@font-face {
+ font-family: "Raleway";
+ src: url("/fonts/Raleway-VariableFont_wght.otf") format("opentype"),
+        url("/fonts/Raleway-Italic-VariableFont_wght.otf") format("opentype"),
+        url("/fonts/Raleway-VariableFont_wght.ttf") format("truetype"),
+        url("/fonts/Raleway-Italic-VariableFont_wght.ttf") format("truetype"),
+        url("/fonts/Raleway-VariableFont_wght.woff2") format("wooff2"),
+        url("/fonts/Raleway-Italic-VariableFont_wght.woff2") format("woff2");
+}
