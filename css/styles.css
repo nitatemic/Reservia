@@ -39,4 +39,9 @@ nav a:hover {
 .signUp {
         color : #0065FC;
         font-weight: bold;
+        
+}
+
+.signUp:hover{
+        border-top: none;
 }
