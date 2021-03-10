@@ -3,12 +3,14 @@
 body {
         font-family: Raleway;
         padding-left: 2rem ;
+        flex-wrap: wrap;
 }
 
 header {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        flex-wrap: wrap;
 }
 
 nav{
@@ -87,10 +89,10 @@ input[type=submit]      {
         padding : 1rem;
 }
 
-.fa-money-bill-wave {
+.fas:not(#pin) {
         color: #0065FC;
         background-color: #DEEBFF;
-        padding: 0.7rem;
+        padding: 0.8rem;
         border-radius: 50%;
         -webkit-border-radius: 50%;
         -moz-border-radius: 50%;
@@ -99,8 +101,20 @@ input[type=submit]      {
         -webkit-border-radius: 1rem;
 }
 
+.filters {
+        display: flex;
+        margin-top: 1rem;;
+        align-items: center;
+        flex-wrap: wrap;
+}
+
+.filters h3{
+        margin-right : 1rem;
+}
+
 .filter {
         display: inline-block ;
+
         padding-right: 1rem;
         border: 2px #d8d8d8 solid;
         border-left: none;
@@ -110,6 +124,9 @@ input[type=submit]      {
         -ms-border-radius: 2rem;
         -o-border-radius: 2rem;
         font-weight: bold;
+        height : auto;
+        margin : 1rem;
+
 }
 
 .filter:hover {
