@@ -11,8 +11,6 @@ header {
         align-items: center;
 }
 
-
-
 nav{
         margin : 1rem;
         align-items: center;
@@ -44,4 +42,77 @@ nav a:hover {
 
 .signUp:hover{
         border-top: none;
+}
+
+p {
+        line-height: 1.5;
+        font-size: 1.5rem;
+}
+
+#subtitle       {
+        font-size: 75%;
+}
+
+.searchbox{
+        display: flex;
+}
+#pin {
+        background-color : #F2F2F2;
+        padding : 1rem;
+        border-bottom-left-radius: 1rem;
+        border-top-left-radius: 1rem;
+        margin: 0;
+        
+}
+
+input[type=text] {
+    font-size: inherit;
+    font-family: Raleway;
+    font-weight: bolder;
+    margin: 0;
+    height : 1;
+    padding : 1rem;
+}
+
+input[type=submit]      {
+        background-color :#0065FC;
+        color: white;
+        font-size: inherit;
+        font-family: Raleway;
+        font-weight: bolder;
+        border-bottom-right-radius: 1rem;
+        border-top-right-radius: 1rem;
+        margin : 0;
+        height : 1;
+        padding : 1rem;
+}
+
+.fa-money-bill-wave {
+        color: #0065FC;
+        background-color: #DEEBFF;
+        padding: 0.7rem;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        -webkit-border-radius: 1rem;
+}
+
+.filter {
+        display: inline-block ;
+        padding-right: 1rem;
+        border: 2px #d8d8d8 solid;
+        border-left: none;
+        border-radius: 2rem;
+        -webkit-border-radius: 2rem;
+        -moz-border-radius: 2rem;
+        -ms-border-radius: 2rem;
+        -o-border-radius: 2rem;
+        font-weight: bold;
+}
+
+.filter:hover {
+        background-color: #DEEBFF;
+        transition-duration: 0.3s;
 }

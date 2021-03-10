@@ -9,6 +9,7 @@
         <meta name="author" content="Alexandre de Lemeny-Makedone">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://use.typekit.net/lcu2gxi.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
     </head>
     <body>
         <header>
@@ -20,7 +21,22 @@
             </nav>
         </header>
 
-        <p><b>Trouver votre hébergement pour des vacances de rêve</b><br>En plein centre ville ou en pleine nature</p>
-        </div>
+        <p><b>Trouver votre hébergement pour des vacances de rêve</b><br><span id="subtitle">En plein centre ville ou en pleine nature</span></p>
+            <form class="searchbox">
+                <i id="pin" class="fas fa-map-marker-alt"></i>
+                <input id="search" type="text" name="search" Value="Marseille, France"/>
+                <input type="submit" value="Rechercher">
+            </form>
+            
+            <div id="filters">
+                <h3>Filtres</h3>
+                <div class="filter">
+                    <span class="filterIcon">
+                        <i class="fas fa-money-bill-wave"></i>
+                    </span>
+                    Économique
+                    
+                </div>
+            </div>
     </body>
 </html>
