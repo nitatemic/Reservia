@@ -71,8 +71,7 @@ input[type=text] {
     font-size: inherit;
     font-family: Raleway;
     font-weight: bolder;
-    margin: 0;
-    height : 1;
+    margin: 0rem;
     padding : 1rem;
 }
 
@@ -85,11 +84,10 @@ input[type=submit]      {
         border-bottom-right-radius: 1rem;
         border-top-right-radius: 1rem;
         margin : 0;
-        height : 1;
         padding : 1rem;
 }
 
-.fas:not(#pin) {
+.fil {
         color: #0065FC;
         background-color: #DEEBFF;
         padding: 0.8rem;
@@ -132,4 +130,19 @@ input[type=submit]      {
 .filter:hover {
         background-color: #DEEBFF;
         transition-duration: 0.3s;
+}
+
+.fa-info        {               /* TODO : Corriger le rond */
+        color:#0065FC;
+        border: 2px solid #d8d8d8;
+        padding: .3rem;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+}
+
+.infoBox        {
+        margin-top: 1rem;
 }
