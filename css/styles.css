@@ -156,12 +156,19 @@ article{
         -moz-border-radius: 1rem;
         -ms-border-radius: 1rem;
         -o-border-radius: 1rem;
+        flex-direction: column;
 }
 
 article > *     {
         margin : 2rem;
+        display: flex;
+
 }
 
+.cards  {
+        display: inline-flex;
+        flex-wrap: wrap;
+}
 .card {
         background-color: white;
         display: flex;
@@ -174,6 +181,7 @@ article > *     {
         -moz-border-radius: 1rem;
         -ms-border-radius: 1rem;
         -o-border-radius: 1rem;
+        margin : 1rem;
 }
 .card > img {
         width: 14rem;
