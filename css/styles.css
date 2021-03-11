@@ -3,7 +3,6 @@
 body {
         font-family: Raleway;
         padding-left: 2rem ;
-        flex-wrap: wrap;
 }
 
 header {
@@ -147,7 +146,8 @@ input[type=submit]      {
         margin-top: 1rem;
 }
 article{
-        display: inline-flex;
+        display: flex;
+
         background-color: #F2F2F2;
         padding-top: 1rem;
         margin-top: 2rem;
@@ -159,20 +159,33 @@ article{
         flex-direction: column;
 }
 
-article > *     {
-        margin : 2rem;
-        display: flex;
-
-}
-
-.cards  {
+article > .cards     {
+        margin-left : 2rem;
+        margin-right : 2rem;
+        display : flex;
+        justify-content : center;
         display: inline-flex;
         flex-wrap: wrap;
+
 }
+
+article > a     {
+        text-decoration : none;
+        color : black;
+        font-weight : bold;
+        margin: 2rem;
+}
+
+article > h3    {
+        margin-left: 2rem;
+        margin-top: 3rem;
+        font-size: 1.5rem;
+}
+
 .card {
         background-color: white;
         display: flex;
-        box-shadow: .5rem .5rem 1.5rem 0 rgba(0,0,0,0.2);
+        box-shadow: .5rem .5rem 1.5rem 0 rgba(0, 0, 0, 0.2);
         border: .3rem solid white;
         border-bottom: none;
         border-radius: 1rem;
@@ -184,10 +197,13 @@ article > *     {
         margin : 1rem;
 }
 .card > img {
-        width: 14rem;
+        width: 16rem;
         border-bottom: none;
         border-top-left-radius: 1rem;
         border-top-right-radius: 1rem;
+        height: 8rem;
+        object-fit: cover;
+        
 }
 
 .hostingName     {
@@ -211,4 +227,59 @@ article > *     {
 
 .disa       {
         color : #DEEBFF;
+}
+
+aside {
+                display: inline-flex;
+                background-color: #F2F2F2;
+                padding-top: 1rem;
+                margin-top: 2rem;
+                margin-left: 2rem;
+                border-radius: 1rem;
+                -webkit-border-radius: 1rem;
+                -moz-border-radius: 1rem;
+                -ms-border-radius: 1rem;
+                -o-border-radius: 1rem;
+                flex-direction: column;        
+}
+
+#hebergements{
+        display: flex;
+        flex-wrap: wrap;
+}
+
+.cardPop > img    {
+        width: 7rem;
+        border-bottom: none;
+        border-top-left-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+        height: 8rem;
+        object-fit: cover;
+}
+
+.cardPop {
+        background-color: white;
+        display: flex;
+        box-shadow: .5rem .5rem 1.5rem 0 rgba(0, 0, 0, 0.2);
+        border: .3rem solid white;
+        border-bottom: none;
+        border-radius: 1rem;
+        flex-direction:row;
+        -webkit-border-radius: 1rem;
+        -moz-border-radius: 1rem;
+        -ms-border-radius: 1rem;
+        -o-border-radius: 1rem;
+        margin: 2rem;
+}
+
+.cardPop > .description {
+        display: flex;
+        flex-direction: column;
+        margin: 1rem 2rem 1rem 1rem;
+
+}
+
+.description > .nameAndPrice    {
+        display: flex;
+        flex-direction: column;
 }
