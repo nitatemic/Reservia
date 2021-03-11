@@ -131,7 +131,7 @@ input[type=submit]      {
         transition-duration: 0.3s;
 }
 
-.fa-info        {               /* TODO : Corriger le rond */
+.fa-info        {               /* TODO : Corriger le rond issue#2 */
         color:#0065FC;
         border: 2px solid #d8d8d8;
         padding: .3rem;
