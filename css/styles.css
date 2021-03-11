@@ -26,7 +26,7 @@ nav a {
         text-decoration: none;
 }
 
-nav a:hover {
+nav > a:hover {
         color: #0065FC;
         border-top: #0065FC 3px solid ;
 }
@@ -145,4 +145,62 @@ input[type=submit]      {
 
 .infoBox        {
         margin-top: 1rem;
+}
+article{
+        display: inline-flex;
+        background-color: #F2F2F2;
+        padding-top: 1rem;
+        margin-top: 2rem;
+        border-radius: 1rem;
+        -webkit-border-radius: 1rem;
+        -moz-border-radius: 1rem;
+        -ms-border-radius: 1rem;
+        -o-border-radius: 1rem;
+}
+
+article > *     {
+        margin : 2rem;
+}
+
+.card {
+        background-color: white;
+        display: flex;
+        box-shadow: .5rem .5rem 1.5rem 0 rgba(0,0,0,0.2);
+        border: .3rem solid white;
+        border-bottom: none;
+        border-radius: 1rem;
+        flex-direction: column;
+        -webkit-border-radius: 1rem;
+        -moz-border-radius: 1rem;
+        -ms-border-radius: 1rem;
+        -o-border-radius: 1rem;
+}
+.card > img {
+        width: 14rem;
+        border-bottom: none;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+}
+
+.hostingName     {
+        font-weight: bold;
+        margin : .5rem;
+}
+
+.price {
+        margin-left : .5rem;
+}
+
+.fa-star        {
+        color:#0065FC;
+}
+
+.mark {
+        margin-left : .5rem;
+        margin-top: .5rem;
+        margin-bottom: .5rem;
+}
+
+.disa       {
+        color : #DEEBFF;
 }
