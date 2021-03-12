@@ -131,7 +131,8 @@ input[type=submit]      {
         transition-duration: 0.3s;
 }
 
-.fa-info        {               /* TODO : Corriger le rond issue#2 */
+.fa-info        {
+        /*TODO: Corrigerlerondissue#2*/
         color:#0065FC;
         border: 2px solid #d8d8d8;
         padding: .3rem;
@@ -146,9 +147,8 @@ input[type=submit]      {
         margin-top: 1rem;
 }
 
-article{
+section{
         display: flex;
-
         background-color: #F2F2F2;
         padding-top: 1rem;
         margin-top: 2rem;
@@ -158,26 +158,26 @@ article{
         -ms-border-radius: 1rem;
         -o-border-radius: 1rem;
         flex-direction: column;
+        
 }
 
-article > .cards     {
+section > .cards     {
         margin-left : 2rem;
         margin-right : 2rem;
-        display : flex;
+        display : grid;
         justify-content : center;
-        display: inline-flex;
         flex-wrap: wrap;
-
+        grid-template-columns: repeat(3, 1fr);
 }
 
-article > a     {
+section > a     {
         text-decoration : none;
         color : black;
         font-weight : bold;
         margin: 2rem;
 }
 
-article > h3    {
+section > h3    {
         margin-left: 2rem;
         margin-top: 3rem;
         font-size: 1.5rem;
@@ -196,6 +196,7 @@ article > h3    {
         -ms-border-radius: 1rem;
         -o-border-radius: 1rem;
         margin : 1rem;
+        
 }
 .card > img {
         width: 16rem;
