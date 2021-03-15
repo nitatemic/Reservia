@@ -85,9 +85,9 @@ input[type=submit]      {
         font-weight: bolder;
         border-bottom-right-radius: 1rem;
         border-top-right-radius: 1rem;
-        margin : 0;
+        margin : 0rem;
         padding : 1rem;
-        border : 0px;
+        border : 0rem;
 }
 
 .fil {
@@ -155,7 +155,6 @@ section{
         display: grid;
         background-color: #F2F2F2;
         padding-top: 1rem;
-        margin-top: 2rem;
         border-radius: 1rem;
         -webkit-border-radius: 1rem;
         -moz-border-radius: 1rem;
@@ -163,12 +162,14 @@ section{
         -o-border-radius: 1rem;
         /*flex-direction: column;*/
         grid-template-columns: repeat(1, 1fr);
+        padding-left: 1rem;
+        padding-right: 1rem;
         
 }
 
 section > .cards     {
-        margin-left : 2rem;
-        margin-right : 2rem;
+        margin-left : 0;
+        margin-right : 0;
         display : grid;
         /*justify-content : center;*/
         /*flex-wrap: wrap;*/
@@ -183,7 +184,7 @@ section > a     {
 }
 
 section > h3    {
-        margin-left: 2rem;
+        margin-left: 1rem;
         margin-top: 3rem;
         font-size: 1.5rem;
 }
@@ -208,8 +209,8 @@ section > h3    {
         border-bottom: none;
         border-top-left-radius: 1rem;
         border-top-right-radius: 1rem;
-        height: 8rem;
         object-fit: cover;
+                height: 8rem;
         
 }
 
@@ -236,28 +237,38 @@ section > h3    {
         color : #DEEBFF;
 }
 
-aside {
-                display: inline-flex;
+#popular {
                 background-color: #F2F2F2;
-                padding-top: 1rem;
-                margin-top: 2rem;
-                margin-left: 2rem;
+                padding: 2rem;
+                margin: 0 1rem 0 2rem;
                 border-radius: 1rem;
                 -webkit-border-radius: 1rem;
                 -moz-border-radius: 1rem;
                 -ms-border-radius: 1rem;
                 -o-border-radius: 1rem;
-                flex-direction: column;        
+                display: grid;
+                grid-column: 3;
+                grid-row: 1;
+}
+
+h3 > i{
+        float: right;
+}
+
+#popular > h3{
+        margin-left: 1rem;
+        margin-top: 3rem;
+        font-size: 1.5rem;
 }
 
 #hebergements{
-        display: flex;
-        flex-wrap: wrap;
+        display: grid;
+        grid-column: 1 / 3;
+        grid-row: 1;
 }
 
 .cardPop > img    {
         width: 7rem;
-        border-bottom: none;
         border-top-left-radius: 1rem;
         border-bottom-left-radius: 1rem;
         height: 8rem;
@@ -269,7 +280,6 @@ aside {
         display: flex;
         box-shadow: .5rem .5rem 1.5rem 0 rgba(0, 0, 0, 0.2);
         border: .3rem solid white;
-        border-bottom: none;
         border-radius: 1rem;
         flex-direction:row;
         -webkit-border-radius: 1rem;
@@ -282,11 +292,18 @@ aside {
 .cardPop > .description {
         display: flex;
         flex-direction: column;
-        margin: 1rem 2rem 1rem 1rem;
+        margin: 1rem 2rem 0 1rem;
 
 }
 
 .description > .nameAndPrice    {
         display: flex;
         flex-direction: column;
+}
+
+#hebAndPop {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  margin-top : 2rem;
 }
