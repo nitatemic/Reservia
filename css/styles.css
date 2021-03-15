@@ -2,7 +2,8 @@
 
 body {
         font-family: Raleway;
-        padding-left: 2rem ;
+        padding-left: 2% ;
+        padding-right: 2%;
 }
 
 header {
@@ -99,7 +100,7 @@ input[type=submit]      {
 }
 
 .filters {
-        display: flex;
+        display: inline-flex;
         margin-top: 1rem;;
         align-items: center;
         flex-wrap: wrap;
@@ -111,7 +112,7 @@ input[type=submit]      {
 
 .filter {
         display: inline-block ;
-
+        flex-wrap: wrap;
         padding-right: 1rem;
         border: 2px #d8d8d8 solid;
         border-left: none;
@@ -165,8 +166,8 @@ section > .cards     {
         margin-left : 2rem;
         margin-right : 2rem;
         display : grid;
-        justify-content : center;
-        flex-wrap: wrap;
+        /*justify-content : center;*/
+        /*flex-wrap: wrap;*/
         grid-template-columns: repeat(3, 1fr);
 }
 
@@ -196,10 +197,10 @@ section > h3    {
         -ms-border-radius: 1rem;
         -o-border-radius: 1rem;
         margin : 1rem;
+
         
 }
 .card > img {
-        width: 16rem;
         border-bottom: none;
         border-top-left-radius: 1rem;
         border-top-right-radius: 1rem;
