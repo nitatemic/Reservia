@@ -4,6 +4,8 @@ body {
         font-family: Raleway;
         padding-left: 2% ;
         padding-right: 2%;
+        margin-top: 0%;
+        margin-right: 0%;
 }
 
 header {
@@ -14,16 +16,16 @@ header {
 }
 
 nav{
-        margin : 1rem;
         align-items: center;
-        margin-top : 2rem
+
 }
 
 nav a {
-        margin : 2rem;
-        padding : 2.3rem 0 0 0;
+        margin :    0% 2rem 2rem 0%;
+        padding-top : 2rem;
         color : black;
         text-decoration: none;
+        display: inline-block;
 }
 
 nav > a:hover {
@@ -33,7 +35,8 @@ nav > a:hover {
 
 .navButtonActive        {
         color : #0065FC;
-        border-top: #0065FC 3px solid ;
+        border-top: 3px solid #0065FC;
+
 }
 
 .signUp {
@@ -149,7 +152,7 @@ input[type=submit]      {
 }
 
 section{
-        display: flex;
+        display: grid;
         background-color: #F2F2F2;
         padding-top: 1rem;
         margin-top: 2rem;
@@ -158,7 +161,8 @@ section{
         -moz-border-radius: 1rem;
         -ms-border-radius: 1rem;
         -o-border-radius: 1rem;
-        flex-direction: column;
+        /*flex-direction: column;*/
+        grid-template-columns: repeat(1, 1fr);
         
 }
 
