@@ -3,12 +3,15 @@
 }
 
 
-body {
+body{
         font-family: Raleway;
+        padding : 0%;
+        margin: 0%;
+}
+
+.allWithoutFooter       {
         padding-left: 2% ;
         padding-right: 2%;
-        margin-top: 0%;
-        margin-right: 0%;
 }
 
 header {
@@ -306,7 +309,7 @@ h3 > i{
 
 #hebAndPop {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, 1fr);
   grid-auto-rows: minmax(100px, auto);
   margin-top : 2rem;
 }
@@ -351,3 +354,26 @@ h3 > i{
 #activite4 { grid-area: a4; }
 #activite5 { grid-area: a5; }
 #activite6 { grid-area: a6; }
+
+footer {
+        background-color: #F2F2F2;
+        width:100%;
+        display: flex;
+        flex-wrap: nowrap;
+        margin: 0%;
+        padding: 2rem;
+}
+
+footer > div{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        display: grid;
+        width: 33%;
+        grid-template-columns: repeat(1, 1fr);
+}
+
+footer > div > a        {
+        color: black;
+        text-decoration: none;
+        padding-top: 1rem;
+}
