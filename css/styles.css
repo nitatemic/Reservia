@@ -362,6 +362,7 @@ footer {
         flex-wrap: nowrap;
         margin: 0%;
         padding: 2rem;
+        margin-top: 3rem;
 }
 
 footer > div{
