@@ -319,47 +319,101 @@ h3 > i{
 
 .activites      {
         margin-top: 3rem;
+        margin-bottom: 4rem;
 }
 
 .cardsActivites {
-        display: grid;
-        grid-template-columns: auto auto auto auto;
-        grid-template-rows: auto auto auto;
-        grid-template-areas:
-        'a1 a2 a4 a5'  
-        'a1 a2 a4 a6' 
-        'a1 a3 a4 a6';
-        grid-gap: 1rem;
-}
-
-.cardsActivites > .card {
-        background-color: white;
+        height: 30rem;
         display: flex;
-        box-shadow: .5rem .5rem 1.5rem 0 rgba(0, 0, 0, 0.2);
-        flex-direction: column;
-        margin: 1rem;
-        border-radius: 1rem;
-        -webkit-border-radius: 1rem;
-        -moz-border-radius: 1rem;
-        -ms-border-radius: 1rem;
-        -o-border-radius: 1rem;
+        flex-direction: row;
+        flex-wrap: nowrap
+        
 }
 
-.cardsActivites > .card > img   {
+.activite     {
+        display: flex;
+        flex-direction: column;
+        max-width: 24%;
+        box-shadow: .5rem .5rem 1.5rem 0 rgba(0, 0, 0, 0.2);
+        border-radius:1rem;
+        -webkit-border-radius:1rem;
+        -moz-border-radius:1rem;
+        -ms-border-radius:1rem;
+        -o-border-radius:1rem;
+        margin: 0 1rem 0 0;
+}
+.activite > img     {
         object-fit: cover;
+        height: 100%;
         max-width: 100%;
-        max-height: 100%;
         border-top-left-radius: 1rem;
         border-top-right-radius: 1rem;
+}
+
+.column {
+        display: inline-flex;
+        width:24%;
+        flex-direction: column;
+        padding: 0 0 2rem 0;
+        margin: 0 1rem 0 0 ; 
+        height: 30rem;
 
 }
 
-#activite1 { grid-area: a1; }
-#activite2 { grid-area: a2; }
-#activite3 { grid-area: a3; }
-#activite4 { grid-area: a4; }
-#activite5 { grid-area: a5; }
-#activite6 { grid-area: a6; }
+.column > .activite     {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        box-shadow: .5rem .5rem 1.5rem 0 rgba(0, 0, 0, 0.2);
+        border-radius:1rem;
+        -webkit-border-radius:1rem;
+        -moz-border-radius:1rem;
+        -ms-border-radius:1rem;
+        -o-border-radius:1rem;
+        padding-bottom: 2rem;
+        margin: 0 1rem 0 0;
+}
+.column > .activite > img     {
+        object-fit: cover;
+        height: 100%;
+        max-width: 100%;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+}
+
+#act1   {
+        height: 100%;
+}
+
+#act2   {
+        height: 56%;
+        margin-bottom: 1rem;
+}
+#act2   > img {
+        width: 100%;
+        max-height: 100%;
+}
+#act3 {
+        height: 100%;
+}
+#act4   {
+        height: 28%;
+        margin-bottom: 1rem;
+}
+
+#act4   > img {
+        width: 100%;
+        max-height: 100%;
+}
+
+#act5   {
+        height: 28%;
+        
+}
+
+#act6   {
+        height: 56%
+}
 
 footer {
         background-color: #F2F2F2;
