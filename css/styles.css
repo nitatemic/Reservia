@@ -1,6 +1,9 @@
 :root{
         --blue : #0065FC;
+        --grey : #F2F2F2;
 }
+
+
 
 
 body{
@@ -438,3 +441,63 @@ footer > div > a        {
         text-decoration: none;
         padding-top: 1rem;
 }
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+        body, .allWithoutFooter{
+                margin: 0 0 0 0;
+                padding: 0 0 0 0;
+        }
+        .logo   {
+                margin: 1rem 0 0 1rem;
+        }
+        nav {
+                display: flex;
+                flex-wrap: wrap-reverse;
+                width: 100%;
+                padding: 0;
+                margin: 0 0 0 0;
+        }
+
+        #btnHeb {
+                width: 50%;
+                margin-right : 0;
+
+
+        }
+
+        #btnAct {
+                width: 50%;
+                margin-right : 0;
+        }
+
+        nav a {
+                padding-bottom: .5rem;
+                border-bottom: 3px solid var(--grey);
+                text-align:center;
+        }
+
+        nav > a:hover {
+                color: var(--blue);
+                border-top: 0 ;
+                border-bottom: 3px solid var(--blue); 
+        }
+
+        .navButtonActive        {
+                color : var(--blue);
+                border-bottom: 3px solid var(--blue);
+                border-top: 0px ;
+        }
+
+        .signUp {
+                bottom:1rem;
+                right:1rem;
+                position: absolute;
+                right:1rem;
+                top:2rem;
+                padding:0;
+                margin : 0;
+        }
+
+}       /* Extra small devices (phones, 600px and down) */
