@@ -34,6 +34,7 @@ nav a {
         color : black;
         text-decoration: none;
         display: inline-block;
+        cursor:pointer;
 }
 
 nav > a:hover {
@@ -84,10 +85,10 @@ input[type=text] {
     font-weight: bolder;
     margin: 0rem;
     padding : 1rem;
-    border : 0px;
+    border : 1px var(--grey) solid;
 }
 
-input[type=submit]      {
+#submit      {
         background-color :var(--blue);
         color: white;
         font-size: inherit;
@@ -98,8 +99,17 @@ input[type=submit]      {
         margin : 0rem;
         padding : 1rem;
         border : 0rem;
+        cursor:pointer;
 }
 
+#submit > p {
+        font-size: 1rem;
+        padding : 0 0 0 0;
+        margin : 0 0 0 0;
+}
+#submit > i{
+        display : none;
+}
 .fil {
         color: var(--blue);
         background-color: #DEEBFF;
@@ -449,9 +459,11 @@ footer > div > a        {
                 margin: 0 0 0 0;
                 padding: 0 0 0 0;
         }
+
         .logo   {
                 margin: 1rem 0 0 1rem;
         }
+        
         nav {
                 display: flex;
                 flex-wrap: wrap-reverse;
@@ -499,5 +511,29 @@ footer > div > a        {
                 padding:0;
                 margin : 0;
         }
+
+        .allWithoutFooter > p, .searchbox, .filters   {
+                margin : 0 1rem 0 1rem;
+        }
+
+        #submit {
+                border-radius: 1rem;
+                -webkit-border-radius: 1rem;
+                -moz-border-radius: 1rem;
+                -ms-border-radius: 1rem;
+                -o-border-radius: 1rem;
+}
+        #submit > p     {
+                display: none;
+        }
+
+        input[type=text]    {
+                width: 100%;
+                padding: 1rem;
+        }
+        #submit > i    {
+                display: block
+        }
+
 
 }       /* Extra small devices (phones, 600px and down) */
