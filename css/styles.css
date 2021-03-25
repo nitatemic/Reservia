@@ -523,7 +523,7 @@ footer > div > a        {
                 -ms-border-radius: 1rem;
                 -o-border-radius: 1rem;
 }
-        #submit > p     {
+        #submit > span     {
                 display: none;
         }
 
