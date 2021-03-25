@@ -1,6 +1,7 @@
 :root{
         --blue : #0065FC;
         --grey : #F2F2F2;
+        --lightblue : #DEEBFF;
 }
 
 
@@ -71,7 +72,7 @@ p {
         display: flex;
 }
 #pin {
-        background-color : #F2F2F2;
+        background-color : var(--grey);
         padding : 1rem;
         border-bottom-left-radius: 1rem;
         border-top-left-radius: 1rem;
@@ -112,7 +113,7 @@ input[type=text] {
 }
 .fil {
         color: var(--blue);
-        background-color: #DEEBFF;
+        background-color: var(--lightblue);
         padding: 0.8rem;
         border-radius: 50%;
         -webkit-border-radius: 50%;
@@ -122,8 +123,10 @@ input[type=text] {
         -webkit-border-radius: 1rem;
 }
 
+
+
 .filters {
-        display: inline-flex;
+        display: flex;
         margin-top: 1rem;;
         align-items: center;
         flex-wrap: wrap;
@@ -137,7 +140,7 @@ input[type=text] {
         display: inline-block ;
         flex-wrap: wrap;
         padding-right: 1rem;
-        border: 2px #d8d8d8 solid;
+        border: 2px var(--grey) solid;
         border-left: none;
         border-radius: 2rem;
         -webkit-border-radius: 2rem;
@@ -151,14 +154,13 @@ input[type=text] {
 }
 
 .filter:hover {
-        background-color: #DEEBFF;
+        background-color: var(--lightblue);
         transition-duration: 0.3s;
 }
 
 .fa-info        {
         color:var(--blue);
-        
-        border: 2px solid #d8d8d8;
+        border: 2px solid var(--grey);
         border-radius: 100%;
         -webkit-border-radius: 100%;
         -moz-border-radius: 100%;
@@ -175,14 +177,13 @@ input[type=text] {
 
 section{
         display: grid;
-        background-color: #F2F2F2;
+        background-color: var(--grey);
         padding-top: 1rem;
         border-radius: 1rem;
         -webkit-border-radius: 1rem;
         -moz-border-radius: 1rem;
         -ms-border-radius: 1rem;
         -o-border-radius: 1rem;
-        /*flex-direction: column;*/
         grid-template-columns: repeat(1, 1fr);
         padding-left: 1rem;
         padding-right: 1rem;
@@ -193,8 +194,6 @@ section > .cards     {
         margin-left : 0;
         margin-right : 0;
         display : grid;
-        /*justify-content : center;*/
-        /*flex-wrap: wrap;*/
         grid-template-columns: repeat(3, 1fr);
 }
 
@@ -256,11 +255,11 @@ section > .cards > .card > img {
 }
 
 .disa       {
-        color : #DEEBFF;
+        color : var(--grey);
 }
 
 #popular {
-        background-color: #F2F2F2;
+        background-color: var(--grey);
         padding: 2rem;
         margin: 0 1rem 0 2rem;
         border-radius: 1rem;
@@ -429,7 +428,7 @@ h3 > i{
 }
 
 footer {
-        background-color: #F2F2F2;
+        background-color: var(--grey);
         width:100%;
         display: flex;
         flex-wrap: nowrap;
@@ -535,5 +534,20 @@ footer > div > a        {
                 display: block
         }
 
+        .searchbox {
+                margin: 2rem 1rem 2rem 1rem;
+        }
+
+        .filters > h3   {
+                width: 100%;
+        }
+
+
+        .infoBox        {
+                margin : 1rem 1rem 1rem 1rem;
+        }
+
+        .infoBox > span{
+        }
 
 }       /* Extra small devices (phones, 600px and down) */
