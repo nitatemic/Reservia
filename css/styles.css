@@ -439,9 +439,9 @@ footer {
 footer > div{
         margin-top: 2rem;
         margin-bottom: 2rem;
-        display: grid;
         width: 33%;
-        grid-template-columns: repeat(1, 1fr);
+        display: flex;
+        flex-direction: column;
 }
 
 footer > div > a        {
@@ -451,7 +451,7 @@ footer > div > a        {
 }
 
 
-/* Extra small devices (1200px and down) */
+/* Small devices (1200px and down) */
 @media only screen and (max-width: 1200px) {
         body, .allWithoutFooter{
                 margin: 0 0 0 0;
@@ -669,4 +669,7 @@ footer > div > a        {
                 height: 10rem;
         }
 
-}       /* Extra small devices (1200px and down) */
+        footer {
+                display: block;
+        }
+}       /* Small devices (1200px and down) */
