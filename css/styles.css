@@ -252,6 +252,8 @@ input[type=text] {
 }
 
 .mark {
+        display: flex;
+        flex-wrap: nowrap;
         margin-left : .5rem;
         margin-top: .5rem;
         margin-bottom: .5rem;
@@ -291,7 +293,7 @@ h3 > i{
         width: 7rem;
         border-top-left-radius: 1rem;
         border-bottom-left-radius: 1rem;
-        height: 8rem;
+        height: auto;
         object-fit: cover;
 }
 
@@ -307,11 +309,13 @@ h3 > i{
         -ms-border-radius: 1rem;
         -o-border-radius: 1rem;
         margin: 2rem;
+        height: 11rem;
 }
 
 .cardPop > .description {
         display: flex;
         flex-direction: column;
+        justify-content:space-between;
         margin: 1rem 2rem 0 1rem;
 
 }
@@ -320,6 +324,7 @@ h3 > i{
         display: flex;
         flex-direction: column;
 }
+
 
 #hebAndPop {
   display: grid;
@@ -509,6 +514,11 @@ footer > div > a        {
                 top:2rem;
                 padding:0;
                 margin : 0;
+                height: 2rem;
+        }
+
+        .signUp:hover{
+                border: none
         }
 
         .allWithoutFooter > p, .searchbox, .filters   {
@@ -521,7 +531,7 @@ footer > div > a        {
                 -moz-border-radius: 1rem;
                 -ms-border-radius: 1rem;
                 -o-border-radius: 1rem;
-}
+        }
         #submit > span     {
                 display: none;
         }
