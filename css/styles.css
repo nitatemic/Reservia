@@ -451,8 +451,8 @@ footer > div > a        {
 }
 
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+/* Extra small devices (1200px and down) */
+@media only screen and (max-width: 1200px) {
         body, .allWithoutFooter{
                 margin: 0 0 0 0;
                 padding: 0 0 0 0;
@@ -552,6 +552,7 @@ footer > div > a        {
         }
 
         #popular        {
+                width: 100%;
                 margin: 0 0 0 0;
                 padding : 0 0 0 0;
         }
@@ -579,6 +580,6 @@ footer > div > a        {
 }
         .cards > .card {
                 width: 100%;
-                margin-top: 0px;
+                padd
         }
-}       /* Extra small devices (phones, 600px and down) */
+}       /* Extra small devices (1200px and down) */
