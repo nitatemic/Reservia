@@ -360,16 +360,16 @@ h3 > i{
         flex-direction: column;
         max-width: 24%;
         box-shadow: .5rem .5rem 1.5rem 0 rgba(0, 0, 0, 0.2);
-        border-radius:1rem;
-        -webkit-border-radius:1rem;
-        -moz-border-radius:1rem;
-        -ms-border-radius:1rem;
-        -o-border-radius:1rem;
+        border-radius: 1rem;
+        -webkit-border-radius: 1rem;
+        -moz-border-radius: 1rem;
+        -ms-border-radius: 1rem;
+        -o-border-radius: 1rem;
         margin: 0 1rem 0 0;
 }
 .activite > img     {
         object-fit: cover;
-        height: 100%;
+        height: calc(100% - 4rem);
         max-width: 100%;
         border-top-left-radius: 1rem;
         border-top-right-radius: 1rem;
@@ -377,7 +377,7 @@ h3 > i{
 
 .column {
         display: inline-flex;
-        width:24%;
+        width: 25%;
         flex-direction: column;
         padding: 0 0 2rem 0;
         margin: 0 1rem 0 0 ; 
@@ -388,6 +388,7 @@ h3 > i{
 .column > .activite     {
         display: flex;
         flex-direction: column;
+        background-color: white;
         max-width: 100%;
         box-shadow: .5rem .5rem 1.5rem 0 rgba(0, 0, 0, 0.2);
         border-radius:1rem;
@@ -395,23 +396,26 @@ h3 > i{
         -moz-border-radius:1rem;
         -ms-border-radius:1rem;
         -o-border-radius:1rem;
-        padding-bottom: 2rem;
-        margin: 0 1rem 0 0;
+        margin: 0 0 0 0;
 }
+
 .column > .activite > img     {
         object-fit: cover;
-        height: 100%;
         max-width: 100%;
         border-top-left-radius: 1rem;
         border-top-right-radius: 1rem;
 }
 
+.activite > .hostingName{
+        font-weight: bold;
+        margin : 1.5em 0 1.5rem 1rem;
+}
 #act1   {
         height: 100%;
 }
 
 #act2   {
-        height: 56%;
+        height: 55%;
         margin-bottom: 1rem;
 }
 #act2   > img {
@@ -422,7 +426,7 @@ h3 > i{
         height: 100%;
 }
 #act4   {
-        height: 28%;
+        height: 42%;
         margin-bottom: 1rem;
 }
 
@@ -432,12 +436,12 @@ h3 > i{
 }
 
 #act5   {
-        height: 28%;
+        height: 42%;
         
 }
 
 #act6   {
-        height: 56%
+        height: 55%
 }
 
 footer {
