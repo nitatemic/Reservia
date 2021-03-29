@@ -36,6 +36,7 @@ nav a {
         text-decoration: none;
         display: inline-block;
         cursor:pointer;
+        border-top: 3px solid white;
 }
 
 nav > a:hover {
@@ -115,12 +116,12 @@ input[type=text] {
         color: var(--blue);
         background-color: var(--lightblue);
         padding: 0.8rem;
-        border-radius: 50%;
-        -webkit-border-radius: 50%;
-        -moz-border-radius: 50%;
-        -ms-border-radius: 50%;
-        -o-border-radius: 50%;
-        -webkit-border-radius: 1rem;
+        border-radius: 50px;
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        -ms-border-radius: 50px;
+        -o-border-radius: 50px;
+        -webkit-border-radius: 50px;
 }
 
 
