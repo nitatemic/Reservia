@@ -176,6 +176,12 @@ input[type=text] {
 
 .infoBox        {
         margin-top: 1rem;
+        display: inline-flex;
+        align-items: center;
+}
+
+.infoBox > div > span{
+        padding-left: .5rem;
 }
 
 #hebergements{
