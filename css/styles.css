@@ -4,7 +4,9 @@
         --lightblue : #DEEBFF;
 }
 
-
+html {
+        scroll-behavior: smooth;
+}
 
 
 body{
