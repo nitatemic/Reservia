@@ -5,7 +5,7 @@
 }
 
 html {
-        scroll-behavior: smooth;
+        scroll-behavior: smooth; /* Does not work on Safari */
 }
 
 
@@ -27,11 +27,11 @@ header {
         flex-wrap: wrap;
 }
 
-nav{
-        align-items: center;
+nav{    /* Navbar */
+        align-items: center; 
 }
 
-nav a {
+nav a { /* navbar buttons */
         margin :    0% 2rem 2rem 0%;
         padding-top : 2rem;
         color : black;
@@ -41,24 +41,18 @@ nav a {
         border-top: 3px solid white;
 }
 
-nav > a:hover {
+nav > a:hover { /* navbar buttons (hover) */
         color: var(--blue);
         border-top: var(--blue) 3px solid ;
 }
 
-.navButtonActive        {
-        color : var(--blue);
-        border-top: 3px solid var(--blue);
-
-}
-
-.signUp {
+.signUp {       /* SignUp button*/
         color : var(--blue);
         font-weight: bold;
         
 }
 
-.signUp:hover{
+.signUp:hover{  /* SignUp button*/
         border-top: none;
 }
 
@@ -67,14 +61,15 @@ p {
         font-size: 1.5rem;
 }
 
-#subtitle       {
+#subtitle       {       
         font-size: 75%;
 }
 
+/* ------------------------Searchbox-------------------------------*/
 .searchbox{
         display: flex;
 }
-#pin {
+#pin {  /* First part of searchbox*/
         background-color : var(--grey);
         padding : 1rem;
         border-bottom-left-radius: 1rem;
@@ -83,7 +78,7 @@ p {
         
 }
 
-input[type=text] {
+input[type=text] {      /* Input text of searchbox */
     font-size: inherit;
     font-family: Raleway;
     font-weight: bolder;
@@ -92,7 +87,7 @@ input[type=text] {
     border : 1px var(--grey) solid;
 }
 
-#submit      {
+#submit      {  /* Button of searchbox*/
         background-color :var(--blue);
         color: white;
         font-size: inherit;
@@ -106,14 +101,19 @@ input[type=text] {
         cursor:pointer;
 }
 
-#submit > p {
+#submit>p {     /* Text of the search box button*/
         font-size: 1rem;
         padding : 0 0 0 0;
         margin : 0 0 0 0;
 }
-#submit > i{
-        display : none;
+
+#submit > i{    /* Icon of the search box button (*/
+        display : none; /* It will be visible in mobile version*/
 }
+
+/* ------------------------End of searchbox-------------------------------*/
+
+/* ------------------------Filters-------------------------------*/
 .fil {
         color: var(--blue);
         background-color: var(--lightblue);
@@ -125,8 +125,6 @@ input[type=text] {
         -o-border-radius: 50px;
         -webkit-border-radius: 50px;
 }
-
-
 
 .filters {
         display: flex;
@@ -174,12 +172,15 @@ input[type=text] {
         
 }
 
+/* ------------------------End of filters-------------------------------*/
+
+
 .infoBox        {
         margin-top: 1rem;
         display: inline-flex;
         align-items: center;
 }
-
+/* ------------------------Hébergements-------------------------------*/
 #hebergements{
         display: grid;
         background-color: var(--grey);
@@ -195,7 +196,6 @@ input[type=text] {
         grid-row: 1;
         grid-template-rows: auto auto auto auto auto auto;
 }
-
 
 #hebergements > .cards     {
         margin: 0rem 1rem 0rem 1rem;
@@ -444,6 +444,7 @@ h3 > i{
         height: 55%
 }
 
+/* ------------------------Footer-------------------------------*/
 footer {
         background-color: var(--grey);
         width:100%;
@@ -468,7 +469,7 @@ footer > div > a        {
         text-decoration: none;
         padding-top: 1rem;
 }
-
+/* ------------------------End of Footer-------------------------------*/
 
 /* Small devices (1200px and down) */
 @media only screen and (max-width: 1200px) {
@@ -492,8 +493,6 @@ footer > div > a        {
         #btnHeb {
                 width: 50%;
                 margin-right : 0;
-
-
         }
 
         #btnAct {
@@ -587,8 +586,7 @@ footer > div > a        {
         }
 
         #popular > h3 > i       {
-                padding-right: 1rem;
-                
+                padding-right: 1rem;        
         }
 
         .cardPop        {
@@ -608,6 +606,7 @@ footer > div > a        {
         flex-wrap: wrap;
         width: 100%;
         }
+
         .cards > .card {
                 width: 100%;
         }
@@ -711,4 +710,5 @@ footer > div > a        {
         footer > div > *        {
                 padding-left: 1rem;
         }
+        
 }       /* Small devices (1200px and down) */
