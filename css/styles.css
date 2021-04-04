@@ -151,6 +151,7 @@ input[type=text] {      /* Input text of searchbox */
         font-weight: bold;
         height : auto;
         margin : 1rem;
+        cursor: pointer;
 
 }
 
