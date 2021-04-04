@@ -181,6 +181,10 @@ input[type=text] {      /* Input text of searchbox */
         display: inline-flex;
         align-items: center;
 }
+
+.textInfobox    {
+        padding-left: 1rem;
+}
 /* ------------------------Hébergements-------------------------------*/
 #hebergements{
         display: grid;
