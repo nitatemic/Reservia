@@ -31,7 +31,7 @@ nav     {    /* Navbar */
 }
 
 nav > a   { /* navbar buttons */
-        margin :    0% 2rem 2rem 0%;
+        margin : 0% 2rem 2rem 0%;
         padding-top : 2rem;
         color : black;
         text-decoration: none;
@@ -68,6 +68,7 @@ p {
 .searchbox{
         display: flex;
 }
+
 #pin {  /* First part of searchbox*/
         background-color : var(--grey);
         padding : 1rem;
@@ -200,8 +201,7 @@ input[type=text] {      /* Input text of searchbox */
 #hebergements > .cards     {
         margin: 0rem 1rem 0rem 1rem;
         display : grid;
-        grid-template-columns: repeat(3, 1fr);
-        
+        grid-template-columns: repeat(3, 1fr);   
 }
 
 #hebergements > a     {
