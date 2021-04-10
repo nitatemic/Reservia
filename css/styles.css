@@ -5,11 +5,11 @@
 }
 
 html {
-        scroll-behavior: smooth; /* Does not work on Safari */
+        scroll-behavior: smooth; /* Does not work on Safari without Experimentals Features*/
 }
 
 body{
-        font-family: Raleway;
+        font-family: Raleway;   /* Imported from Typekit */
         padding : 0%;
         margin: 0%;
 }
@@ -99,7 +99,7 @@ input[type=text] {      /* Input text of searchbox */
         cursor:pointer;
 }
 
-#submit>p {     /* Text of the search box button*/
+#submit > p {     /* Text of the search box button*/
         font-size: 1rem;
         padding : 0 0 0 0;
         margin : 0 0 0 0;
@@ -151,9 +151,9 @@ input[type=text] {      /* Input text of searchbox */
         cursor: pointer;
 }
 
-.filter:hover {
+.filter:hover {         /* The filter is blue if :hover */
         background-color: var(--lightblue);
-        transition-duration: 0.3s;
+        transition-duration: 0.2s;
 }
 
 .fa-info        {
