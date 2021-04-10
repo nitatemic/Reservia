@@ -4,11 +4,11 @@
         --lightblue : #DEEBFF;
 }
 
-html {
+html    {
         scroll-behavior: smooth; /* Does not work on Safari without Experimentals Features*/
 }
 
-body{
+body    {
         font-family: Raleway;   /* Imported from Typekit */
         padding : 0%;
         margin: 0%;
@@ -19,18 +19,18 @@ body{
         padding-right: 2%;
 }
 
-header {
+header  {
         display: flex;
         justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
 }
 
-nav{    /* Navbar */
+nav     {    /* Navbar */
         align-items: center; 
 }
 
-nav a { /* navbar buttons */
+nav > a   { /* navbar buttons */
         margin :    0% 2rem 2rem 0%;
         padding-top : 2rem;
         color : black;
@@ -96,22 +96,22 @@ input[type=text] {      /* Input text of searchbox */
         margin : 0rem;
         padding : 1rem;
         border : 0rem;
-        cursor:pointer;
+        cursor: pointer;
 }
 
-#submit > p {     /* Text of the search box button*/
+#submit > p {     /* Text of the search box button */
         font-size: 1rem;
         padding : 0 0 0 0;
         margin : 0 0 0 0;
 }
 
-#submit > i{    /* Icon of the search box button (*/
-        display : none; /* It will be visible in mobile version*/
+#submit > i{    /* Icon of the search box button */
+        display : none; /* It will be visible in mobile version */
 }
 /* ------------------------End of searchbox------------------------------- */
 
 /* ------------------------Filters------------------------------- */
-.fil {
+.fil {  /* Icon of filter */
         color: var(--blue);
         background-color: var(--lightblue);
         padding: 0.8rem;
@@ -130,7 +130,7 @@ input[type=text] {      /* Input text of searchbox */
         flex-wrap: wrap;
 }
 
-.filters h3{
+.filters > h3     {
         margin-right : 1rem;
 }
 
@@ -181,7 +181,7 @@ input[type=text] {      /* Input text of searchbox */
 }
 /* ------------------------End of infobox------------------------------- */
 /* ------------------------Hébergements------------------------------- */
-#hebergements{
+#hebergements   {
         display: grid;
         background-color: var(--grey);
         padding-top: 1rem;
@@ -250,7 +250,7 @@ input[type=text] {      /* Input text of searchbox */
         margin-left : .5rem;
 }
 
-.fa-star        {
+.fa-star        {       /*Etoile Font Awersome*/
         color:var(--blue);
 }
 
@@ -267,7 +267,6 @@ input[type=text] {      /* Input text of searchbox */
 }
 
 #popular {
-        
         background-color: var(--grey);
         padding: 1rem;
         margin: 0 1rem 0 2rem;
@@ -280,11 +279,11 @@ input[type=text] {      /* Input text of searchbox */
         grid-row: 1;
 }
 
-h3 > i{
+h3 > i  {
         float: right;
 }
 
-#popular > h3{
+#popular > h3   {
         padding-right: 1rem;
         margin: 2rem 0 0rem 1rem;
         font-size: 1.5rem;
@@ -324,7 +323,6 @@ h3 > i{
         flex-direction: column;
         justify-content:space-between;
         margin: 1rem 2rem 0 1rem;
-
 }
 
 .description > .nameAndPrice    {
@@ -349,7 +347,6 @@ h3 > i{
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap
-        
 }
 
 .activite     {
@@ -364,6 +361,7 @@ h3 > i{
         -o-border-radius: 1rem;
         margin: 0 1rem 0 0;
 }
+
 .activite > img     {
         object-fit: cover;
         height: calc(100% - 4rem);
@@ -407,6 +405,7 @@ h3 > i{
         font-weight: bold;
         margin : 1.5em 0 1.5rem 1rem;
 }
+
 #act1   {
         height: 100%;
 }
@@ -452,13 +451,12 @@ footer {
         margin-top: 2rem;
 }
 
-footer > div{
+footer > div    {
         margin-top: 2rem;
         margin-bottom: 2rem;
         width: 33%;
         display: flex;
-        flex-direction: column;
-        
+        flex-direction: column;  
 }
 
 footer > div > a        {
@@ -497,7 +495,7 @@ footer > div > a        {
                 margin-right : 0;
         }
 
-        nav a {
+        nav > a {
                 padding-bottom: .5rem;
                 border-bottom: 3px solid var(--grey);
                 text-align:center;
@@ -597,11 +595,11 @@ footer > div > a        {
         }
 
         #hebergements > .cards     {
-        margin-left : 0;
-        margin-right : 0;
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
+                margin-left : 0;
+                margin-right : 0;
+                display: flex;
+                flex-wrap: wrap;
+                width: 100%;
         }
 
         .cards > .card {
@@ -626,7 +624,7 @@ footer > div > a        {
                 height: auto;
         }
 
-        .column{
+        .column {
                 width: 100%;
                 margin: 0 0 0 0;
                 padding: 0 0 0 0;
@@ -638,7 +636,7 @@ footer > div > a        {
                 margin : 1rem 0 1rem 0;
         }
 
-        #act1   > img {
+        #act1 > img {
                 max-width: 100%;
                 height: 10rem;
         }
@@ -648,7 +646,7 @@ footer > div > a        {
                 margin : 1rem 0 1rem 0;
         }
         
-        #act2   > img {
+        #act2 > img {
                 max-width: 100%;
                 height: 10rem;
         }
@@ -658,7 +656,7 @@ footer > div > a        {
                 margin : 1rem 0 1rem 0;
         }
 
-        #act3   > img {
+        #act3 > img {
                 max-width: 100%;
                 height: 10rem;
         }
@@ -668,7 +666,7 @@ footer > div > a        {
                 margin : 1rem 0 1rem 0;
         }
 
-        #act4   > img {
+        #act4 > img {
                 max-width: 100%;
                 height: 10rem;
         }
@@ -679,7 +677,7 @@ footer > div > a        {
                 margin : 1rem 0 1rem 0;
         }
 
-        #act5   > img {
+        #act5 > img {
                 max-width: 100%;
                 height: 10rem;
         }
@@ -690,7 +688,7 @@ footer > div > a        {
                 margin : 1rem 0 1rem 0;
         }
 
-        #act6   > img {
+        #act6 > img {
                 max-width: 100%;
                 height: 10rem;
         }
